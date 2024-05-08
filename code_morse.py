@@ -1,3 +1,5 @@
+import sys
+
 CODE = {
     'a':'.-',
     'b':'-...',
@@ -63,7 +65,7 @@ def traductor(msg):
     return traduccion
 
 def run():
-    texto = input('Ingrese un mensaje: ')
+    texto = str(sys.argv[1])
     print(traductor(texto))
 
 if __name__=='__main__':
